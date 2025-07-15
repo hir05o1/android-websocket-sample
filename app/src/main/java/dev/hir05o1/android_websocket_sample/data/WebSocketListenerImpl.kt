@@ -21,7 +21,7 @@ class WebSocketListenerImpl @Inject constructor(
     private val client: OkHttpClient,
 ) : WebSocketListener() {
 
-    private val TAG = "WebSocketServiceImpl"
+    private val TAG = "WebSocketListenerImpl"
 
     private val _events = MutableSharedFlow<String>(extraBufferCapacity = 64)
     val events: SharedFlow<String> = _events
@@ -63,7 +63,7 @@ class WebSocketListenerImpl @Inject constructor(
 
     override fun onMessage(webSocket: WebSocket, text: String) {
         Log.v(TAG, "onMessage (text): $text")
-        if( text.isBlank()) {
+        if (text.isBlank()) {
             Log.w(TAG, "Received empty message, ignoring")
             return
         }
