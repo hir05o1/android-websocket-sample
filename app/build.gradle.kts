@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "dev.hir05o1.android_websocket_sample"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "dev.hir05o1.android_websocket_sample"
         minSdk = 31
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
