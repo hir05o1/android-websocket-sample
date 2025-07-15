@@ -63,6 +63,7 @@ dependencies {
     // ViewModel utilities for Compose
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     // Hilt
+    implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
     // okhttp
